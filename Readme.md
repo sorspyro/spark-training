@@ -3,7 +3,7 @@
 To setup training environmen do following steps:
 ```
 1. python -m venv .venv
-2. source ./venv/bin/activate
+2. source ./.venv/bin/activate
 3. make setup_env
 4. docker-compose up -d
 ```
