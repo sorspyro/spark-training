@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  spark-cluster:
+    container_name: spark-training-cluster
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: tail -f /dev/null
+    volumes:
+      - ./src:/usr/local/work
+    ports:
+      - "9999:8888"
