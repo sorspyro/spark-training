@@ -56,5 +56,9 @@ RUN pip install delta-spark==2.3.0 apache-sedona==1.3.1
 # Delta standalone for playground
 RUN pip install deltalake
 
+# Jupyter notebook
+RUN pip install jupyterlab==3.5.3
+
 RUN mkdir -p /usr/local/work
 WORKDIR /usr/local/work
+EXPOSE 8888
