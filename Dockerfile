@@ -51,7 +51,7 @@ RUN wget https://repo1.maven.org/maven2/org/apache/sedona/sedona-python-adapter-
 
 
 # Spark-python dependencies
-RUN pip install delta-spark==2.3.0 apache-sedona==1.3.1
+RUN pip install delta-spark==2.3.0 apache-sedona==1.3.1 pandas
 
 # Delta standalone for playground
 RUN pip install deltalake
